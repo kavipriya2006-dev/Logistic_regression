@@ -7,8 +7,7 @@ from sklearn.preprocessing import StandardScaler
 from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import confusion_matrix, precision_score, recall_score, roc_auc_score, roc_curve
 
-# Step 1: Load Binary Classification Dataset
-data = load_breast_cancer()  # Scikit-Learn built-in dataset
+data = load_breast_cancer()  
 X = pd.DataFrame(data.data, columns=data.feature_names)
 y = data.target  # Binary classification (0 = benign, 1 = malignant)
 
